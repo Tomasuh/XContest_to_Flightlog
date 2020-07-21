@@ -77,6 +77,3 @@ def main():
     print("Done")
 
 main()
-import time
-while True:
-    time.sleep(1)
