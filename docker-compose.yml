@@ -1,0 +1,11 @@
+version: '3'
+services:
+  xcontest_to_flightlog:
+    build: xcontest_to_flightlog
+    env_file:
+      - .env
+    volumes:
+      - xcontest_to_flightlog_volume:/storage
+
+volumes:
+  xcontest_to_flightlog_volume:
