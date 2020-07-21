@@ -28,7 +28,7 @@ docker-compose up
 ```
 
 ### Remarks `FLIGHTLOG_BRANDMODEL_ID`
-Can be found in the html of the `New flight` page located at `https://flightlog.org/fl.html?l=1&user_id=7216&a=30&no_start=y`. Search for `brandmodel_id` in the html and take the integer value of the `value` field for the paraglider you want to use.
+Can be found in the html of the `New flight` page. Search for `brandmodel_id` in the html and take the integer value of the `value` field for the paraglider you want to use.
 
 ### Remarks `DEFAULT_TAKEOFF_TYPE`
 
