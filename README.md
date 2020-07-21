@@ -1,6 +1,6 @@
 # XContest to Flightlog automation script
 
-This dockerized python script pulls the given user's IGC files from XContest, converts them to kml format with the help of Gpsdump and then submits them to flightlog.org if it does not already exist there.
+This dockerized python script pulls a given users IGC files from XContest, converts them to kml format with the help of Gpsdump and then submits them to flightlog.org if it does not already exist there.
 
 ## Setup
 
@@ -8,7 +8,7 @@ Create a `.env` file in the root directory of the project with the following ent
 
 ```
 XCONTEST_USERNAME=myusername
-XCONTEST_PASSWORD=BV0==mypassword
+XCONTEST_PASSWORD=mypassword
 FLIGHTLOG_USERNAME=myusername
 FLIGHTLOG_PASSWORD=mypassword
 FLIGHTLOG_BRANDMODEL_ID=my_brandmodel
@@ -28,7 +28,7 @@ docker-compose up
 ```
 
 ### Remarks `FLIGHTLOG_BRANDMODEL_ID`
-Can be found in the html of the `New flight` page located at `https://flightlog.org/fl.html?l=1&user_id=7216&a=30&no_start=y`. Search for `brandmodel_id` in the html and take the integer value of the `value` field.
+Can be found in the html of the `New flight` page located at `https://flightlog.org/fl.html?l=1&user_id=7216&a=30&no_start=y`. Search for `brandmodel_id` in the html and take the integer value of the `value` field for the paraglider you want to use.
 
 ### Remarks `DEFAULT_TAKEOFF_TYPE`
 
